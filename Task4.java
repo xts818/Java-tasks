@@ -33,7 +33,13 @@ public class Task4 {
         if (n <= 0 || a <= 0 || b <= 0) {
             System.out.println("Ошибка: все параметры должны быть больше 0.");
             return;
-        }
+            }
+            
+        if (a % b == 0 || a == b) {
+            System.out.println("Ошибка: таких чисел не существует (a кратно b).");
+            return;
+            }
+
         long totalSum = SumOfNumbers(n, a, b);
         System.out.printf("Сумма первых %d чисел: %d\n", n, totalSum);
     }
