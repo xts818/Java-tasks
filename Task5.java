@@ -4,7 +4,6 @@ public class Task5 {
 
     public static void printFigure(int s) {
         int half = s / 2;
-        
         int spaces = half - 1; 
         int maxNum = 0;        
 
@@ -13,7 +12,6 @@ public class Task5 {
             for (int i = 0; i < spaces; i++) {
                 System.out.print(" ");
             }
-
             if (row <= half) {
                 for (int num = 0; num <= maxNum; num++) {
                     System.out.print(num);
@@ -23,7 +21,6 @@ public class Task5 {
                     System.out.print(num);
                 }
             }
-
             System.out.println();
 
             if (row < half) {
