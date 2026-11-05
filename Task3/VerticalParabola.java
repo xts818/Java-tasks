@@ -11,7 +11,7 @@ public class VerticalParabola {
         this.a = a;
     }
 
-    public boolean isPointInsideParabola(double x, double y) {
+    public boolean isPointAboveParabola(double x, double y) {
         return y > a * Math.pow(x - x0, 2) + y0;
     }
 }
